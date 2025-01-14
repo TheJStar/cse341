@@ -1,6 +1,6 @@
-const routes = require("express").routes;
-const controller = require("./controllers/index.controller.js")
+const routes = require("express").Router();
+const controller = require("../controllers/index-controller");
 
-routes.get('/', ()=>{})
+routes.get('/', controller.helloWorld);
 
 module.exports = routes;
