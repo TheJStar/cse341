@@ -4,6 +4,10 @@ const app = express();
 
 // other imports
 const routes = require("./routes/index-route");
+const connection = require("./database/connection");
+
+// test
+connection.main().catch(console.error())
 
 // Routes
 app.use("/", routes);

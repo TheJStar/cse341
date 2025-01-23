@@ -3,5 +3,5 @@ const helloWorld = (req, res) => {
 };
 
 module.exports = {
-    helloWorld
+    helloWorld,
 };
