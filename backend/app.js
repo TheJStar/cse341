@@ -7,8 +7,6 @@ const mongodb = require('./db/connect');
 const port = process.env.PORT || 8080;
 const app = express();
 
-app.use("/", router);
-
 app
   .use(bodyParser.json())
   .use((req, res, next) => {
